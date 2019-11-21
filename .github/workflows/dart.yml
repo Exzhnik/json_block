@@ -17,4 +17,4 @@ jobs:
     - run: flutter build apk --release
     - name: Create a Release APK
       with:
-        artifacts: "build/app/outputs/apk/debug/*.apk"
+        release: "build/app/outputs/apk/debug/*.apk"
