@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:json_block/bloc/art/bloc.dart';
+import 'package:json_block/bloc/art/event.dart';
 import 'package:json_block/bloc/art/state.dart';
-import 'package:json_block/bloc/article/article_event.dart';
 import 'package:json_block/data/model/result.dart';
 import 'package:json_block/ui/pages/detail.dart';
 

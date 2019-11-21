@@ -1,7 +1,6 @@
 name: Dart CI
 
 on: push
-name: Test, Build and Release apk
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +11,7 @@ jobs:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
       with:
-        flutter-version: '1.7.8+hotfix.4'
+        flutter-version: '1.9.1+hotfix.6'
     - run: flutter pub get
     - run: flutter test
     - run: flutter build apk --debug --split-per-abi
@@ -20,19 +19,3 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "build/app/outputs/apk/debug/*.apk"
-# on: [push]
-
-# jobs:
-#   build:
-
-#     runs-on: ubuntu-latest
-
-#     container:
-#       image:  google/dart:latest
-
-#     steps:
-#     - uses: actions/checkout@v1
-#     - name: Install dependencies
-#       run: packages get
-#     - name: Run tests
-#       run: pub run test

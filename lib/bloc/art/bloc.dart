@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
+import 'package:json_block/bloc/art/event.dart';
 import 'package:json_block/bloc/art/state.dart';
-import 'package:json_block/bloc/article/article_event.dart';
 import 'package:json_block/data/model/result.dart';
 import 'package:json_block/data/rep/repository.dart';
 import 'package:meta/meta.dart';
