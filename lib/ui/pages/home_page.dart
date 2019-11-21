@@ -108,7 +108,6 @@ class _HomePageState extends State<HomePage> {
                 backgroundImage: NetworkImage(articles[pos].urlToImage),
               ),
               title: Text(articles[pos].title),
-              subtitle: Text(articles[pos].publishedAt),
             ),
             onTap: () {
               navigateToDetail(context, articles[pos]);
