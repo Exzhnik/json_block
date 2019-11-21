@@ -1,7 +1,6 @@
 name: Dart CI
 
 on: push
-name: Test, Build and Release apk
 jobs:
   build:
     runs-on: ubuntu-latest
