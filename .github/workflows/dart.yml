@@ -10,11 +10,13 @@ jobs:
       with:
         java-version: '12.x'
     - uses: subosito/flutter-action@v1
+    - uses: steebchen/flutter@v1.0.0
       with:
         flutter-version: '1.9.1+hotfix.6'
     - run: flutter pub get
     - run: flutter test
     - run: flutter build apk --release
     - name: Create a Release APK
+    - uses: steebchen/flutter@v1.0.0
       with:
-        artifacts: "build/app/outputs/apk/debug/*.apk"
+        args: build apk --release
