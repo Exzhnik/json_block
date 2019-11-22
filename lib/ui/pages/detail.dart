@@ -44,7 +44,7 @@ class Detail extends StatelessWidget {
                   padding: EdgeInsets.all(10.0),
                   child: Text(
                     article.title,
-                    style: TextStyle(fontSize: 20.0),
+                    style: TextStyle(fontSize: 20.0, color: Colors.white),
                   ),
                 ),
                  Wrap(
@@ -53,7 +53,7 @@ class Detail extends StatelessWidget {
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.all(10.0),
-                        child: Text(article.content),
+                        child: Text(article.content, style: TextStyle(color: Colors.white),),
                       ),
                       FlatButton(
                         color: Colors.white,

@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                 maxRadius: 30,
                 backgroundImage: NetworkImage(articles[pos].urlToImage),
               ),
-              title: Text(articles[pos].title),
+              title: Text(articles[pos].title, style: TextStyle(color:  Colors.white),),
             ),
             onTap: () {
               navigateToDetail(context, articles[pos]);
